@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MozEnvolveTech — Innovative Tech Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: #10b981;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.3rem; }
+    header p { font-size: 1rem; font-weight: 400; margin-bottom: 1rem; }
+
+    nav {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover { background-color: rgba(255,255,255,0.2); }
+
+    main { max-width: 1200px; margin: auto; padding: 3rem 1rem; }
+
+    section { margin-bottom: 3rem; }
+
+    section h2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.8rem;
+      color: #111827;
+      margin-bottom: 1rem;
+      border-left: 6px solid #10b981;
+      padding-left: 12px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service {
+      background: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+    }
+
+    .service h4 {
+      margin-bottom: 0.5rem;
+      color: #111827;
+      font-weight: 600;
+    }
+
+    .service p { margin-bottom: 1rem; color: #374151; }
+
+    .btn {
+      background-color: #10b981;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .btn:hover { background-color: #0f9e75; }
+
+    .button-group { display: flex; gap: 10px; flex-wrap: wrap; }
+
+    #contact form { display: flex; flex-direction: column; gap: 1rem; margin-top: 1rem; }
+    input, textarea { padding: 0.8rem; border: 1px solid #d1d5db; border-radius: 8px; font-size: 1rem; }
+    button { background-color: #10b981; border: none; color: #fff; padding: 0.8rem; border-radius: 8px; font-weight: 600; cursor: pointer; transition: background 0.3s; }
+    button:hover { background-color: #0f9e75; }
+
+    footer {
+      background-color: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .social-icons { display: flex; justify-content: center; gap: 15px; margin-top: 10px; }
+    .social-icons a { color: #9ca3af; font-size: 1.2rem; transition: color 0.3s; }
+    .social-icons a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌍 MozEnvolveTech</h1>
+    <p>Empowering businesses through apps, mobility, and connectivity.</p>
+    <nav>
+      <a href="#tech">Tech & Apps</a>
+      <a href="#mobility">Transport & Mobility</a>
+      <a href="#connectivity">Communication & Network</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tech">
+      <h2>💡 Technology & Application Development</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Moz Health Care</h4>
+          <p>Subscription-based platform for clinics, labs, and insurers.</p>
+          <a href="https://agendamento-com-1.onrender.com/" target="_blank" class="btn">Visit Website</a>
+        </div>
+        <div class="service">
+          <h4>Moz Hub / Restaurant App</h4>
+          <p>Centralized restaurant listings, food and alcohol delivery services.</p>
+        </div>
+        <div class="service">
+          <h4>Custom App Development</h4>
+          <p>Apps built to customer specifications, tailored for business needs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mobility">
+      <h2>🚗 Transport & Mobility Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h4>ResqTow</h4>
+          <p>Roadside assistance connecting users with tow trucks and repair services.</p>
+          <div class="button-group">
+            <a href="https://resq-tow.com/index.php/about-us/" target="_blank" class="btn">Learn More</a>
+            <a href="https://play.google.com/store/search?q=resqtow&c=apps" target="_blank" class="btn">Download App</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="connectivity">
+      <h2>🌐 Communication & Network Services</h2>
+      <div class="services-grid">
+        <div class="service">
+          <h4>Hosted PBX Services</h4>
+          <p>Cloud-based phone systems for businesses.</p>
+        </div>
+        <div class="service">
+          <h4>ISP & Network Services</h4>
+          <p>Reliable internet and managed network solutions for companies and institutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>📩 Contact Us</h2>
+      <p>We’d love to hear from you! Reach us directly or use the contact form below:</p>
+      <p><strong>📞 Phone:</strong> <a href="tel:+25821403160" class="btn" style="padding:6px 10px; background:#0f9e75;">+258 21 403160</a></p>
+      <p><strong>✉️ Email:</strong> <a href="mailto:info@mozenvolvetech.com" class="contact-link">info@mozenvolvetech.com</a></p>
+      <div class="social-icons">
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+      </div>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© <span id="year"></span> MozEnvolveTech. All rights reserved.</p>
+    <a href="tel:+25821403160" class="contact-link">📞 +258 21 403160</a>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
